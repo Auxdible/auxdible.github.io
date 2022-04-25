@@ -1,7 +1,28 @@
 <!DOCTYPE html>
-<html>
-<body>
+<!-- saved from url=(0069)file:///C:/Users/steve/Documents/GitHub/auxdible.github.io/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+<div id="button">
+<script> function buttonClick() {
+let request = new XMLHttpRequest();
+request.onload = function() {
+const responseJson = JSON.parse(this.response);
+document.getElementById('sent').innerHTML = 'There are ' + responseJson.players.online + ' people on SKrafty <br>' + 'The people on skrafty: ' + responseJson.players.list.toString();
+console.log("running");
+setTimeout(function () {
+document.getElementById('sent').innerHTML = '';
+}, 5000);
+}
+request.open("GET", 'https://api.mcsrvstat.us/2/minecraft.skrafty.com');
+request.send();
+
+
+  
+ }</script>
 <h1>Auxdible's site</h1>
-<p>~ Amiibo is a Cutie</p>
-</body>
-</html>
+
+
+<button type="button" onclick="buttonClick()">
+Click me to send a text to my minecraft server!</button>
+<p id="sent"></p>
+</div>
+</body></html>
