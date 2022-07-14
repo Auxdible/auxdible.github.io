@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<!-- saved from url=(0069)file:///C:/Users/steve/Documents/GitHub/auxdible.github.io/index.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
-<div id="button">
-<script> function buttonClick() {
-let request = new XMLHttpRequest();
-request.onload = function() {
-const responseJson = JSON.parse(this.response);
-document.getElementById('sent').innerHTML = 'There are ' + responseJson.players.online + ' people on SKrafty <br>' + 'The people on skrafty: ' + responseJson.players.list.toString();
-console.log("running");
-setTimeout(function () {
-document.getElementById('sent').innerHTML = '';
-}, 5000);
-}
-request.open("GET", 'https://api.mcsrvstat.us/2/minecraft.skrafty.com');
-request.send();
-
-
-  
- }</script>
-<h1>Auxdible's site</h1>
-
-
-<button type="button" onclick="buttonClick()">
-Click me to send a text to my minecraft server!</button>
-<p id="sent"></p>
-</div>
-</body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet">
+    <link href="img/favicon.ico" rel="icon">
+    <title>bing chilling bop</title>
+</head>
+<body>
+  <header>
+      <img src="img/ico.jpg" alt="My logo" class="introImg">
+      <h1 class="intro">auxdible's website</h1>
+  </header>
+ <main>
+     <div name="info">
+         <p class="body">So hi! I'm Auxdible.</p>
+         <p class="body">This is my site, <a href="https://github.com/Auxdible/auxdible.github.io" class="site">auxdible.github.io</a>. It's just for kicks.</p>
+         <p class="body">Interested in my GitHub? <a href="https://github.com/Auxdible" class="site">Click this!</a></p>
+     </div>
+     <p class="body">Oh? About me? sure.</p>
+     <p class="body">So I'm studying to be a full-stack developer. Fun times. I'm also a student.</p>
+     <p class="body">I enjoy coding, it's fun. I also like coffee? Kind of have an obsession with it.</p>
+     <p class="body">I also like to just be around friends. Hanging out with people and playing games is fun.</p>
+     <p class="body">I own a discord server called <a href="https://discord.gg/sV8ypmD5rS" class="site">Oahu</a>! And I also help with a Cookie Run: Kingdom guild, <a href="https://discord.gg/xMzmJQfygJ" class="site">Caramel Crowns</a>! </p>
+ </main>
+<footer>
+    <div class="footerBlock">
+        <p class="footer">Friend me on discord! My tag is Auxdible#3003.</p>
+        <p class="footer">I'm very open to conversation. If you have coding tips let me know!</p>
+    </div>
+</footer>
+</body>
+</html>

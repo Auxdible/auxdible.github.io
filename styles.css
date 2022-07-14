@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+
+
+h1, h2, p {
+    text-align: center;
+}
+.introImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    alignment: center;
+}
+.intro {
+    font-family: Autumn, sans-serif;
+    font-size: 50px;
+    color: orange;
+
+    font-style: italic;
+}
+.body {
+    font-family: Autumn, sans-serif;
+    font-size: 30px;
+    color: orange;
+    font-style: italic;
+}
+.footer {
+    font-family: Autumn, sans-serif;
+    font-size: 20px;
+    color: orange;
+    font-style: italic;
+}
+.footerBlock {
+    display:block;
+    transform: translate(0px, 200px);
+    padding: 200px;
+}
+.site {
+    color: yellow;
+}
+.site:active {
+    color: gray;
+}
+.site:visited {
+    color:darkgoldenrod;
+}
+.site:hover {
+    color: gold;
+}
