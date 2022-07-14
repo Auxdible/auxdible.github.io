@@ -33,7 +33,6 @@ h1, h2, p {
 }
 .footerBlock {
     display:block;
-    transform: translate(0px, 200px);
     padding: 200px;
 }
 .site {
